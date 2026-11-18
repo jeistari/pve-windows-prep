@@ -1,0 +1,23 @@
+{
+  "name": "pve-windows-prep",
+  "version": "1.4.0",
+  "scripts": [
+    "Prepare-PVEMigration.ps1",
+    "load-virtio-scsi-on-boot.ps1",
+    "Run-PVEPrep.cmd"
+  ],
+  "packages": [
+    {
+      "file": "virtio-win-gt-x64.msi",
+      "path": "packages/virtio-win-gt-x64.msi",
+      "version": "0.1.271",
+      "sha256": "20a15bc93da585f90b4ca3b315652a9478e4c4a76f444d379b357167d727fee4"
+    },
+    {
+      "file": "qemu-ga-x86_64.msi",
+      "path": "packages/qemu-ga-x86_64.msi",
+      "version": "109.1.0",
+      "sha256": "22230284dda8ba4c96a834fe1087228a1db5d0b86247a9d7fcb164d279634817"
+    }
+  ]
+}
